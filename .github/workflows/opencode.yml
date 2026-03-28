@@ -28,6 +28,7 @@ jobs:
       - name: Run opencode
         uses: anomalyco/opencode/github@latest
         env:
+           OPENCODE_PROVIDER: github-copilot
            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          model: copilot/gpt-4o
+          model: gpt-4o
